@@ -1,0 +1,26 @@
+ls
+ls > junk
+cat junk
+wc < junk
+wc < junk > junk2
+cat junk2
+test -f badfile
+status &
+wc < badfile
+badfile
+sleep 100 &
+pkill sleep
+sleep 1 &
+sleep 1
+pwd
+cd
+pwd
+mkdir testdir$$
+cd testdir$$
+pwd
+kill -SIGTSTP $$
+date
+sleep 5 &
+date
+kill -SIGTSTP $$
+exit
